@@ -1,13 +1,19 @@
 .wrapper {
   display: flex;
+  flex-wrap: wrap;
   column-gap: 100px;
   padding: 50px;
-  height: 100%;
 }
 
-.imageMainWrap {
-  flex: 1 0 auto;
-  align-self: center;
+.aboutTitle {
+  margin-top: 50px;
+  margin-bottom: 60px;
+  width: 100%;
+}
+
+.aboutDescription {
+  flex-grow: 1;
+  width: calc(100% - 600px);
 }
 
 .imageWrap {
@@ -16,19 +22,32 @@
 
 .img {
   width: 100%;
-  height: auto;
-  border-radius: 20px;
+  border-radius: 40px;
 }
 
 @media screen and (max-width: 736px) {
 
-  .wrapper {
-    flex-direction: column-reverse;
-    padding: 30px;
+  .aboutDescription {
+    order: 2;
   }
 
-  .wrapper p {
+  .aboutDescription p {
     font-size: 16px;
     line-height: 20px
+  }
+
+  .aboutTitle {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 27px;
+    order: 1;
+  }
+
+  .imageWrap {
+    order: 0;
+  }
+
+  .img {
+    border-radius: 30px;
   }
 }
