@@ -1,10 +1,10 @@
 import { AboutComponent } from './components/about/About.component.tsx';
 
-import './App.module.css';
+import styles from './App.module.css';
 
 function App() {
     return (
-        <main className="home">
+        <main className={styles.mainContainer}>
             <AboutComponent />
         </main>
     );
