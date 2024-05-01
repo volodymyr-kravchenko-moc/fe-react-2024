@@ -1,5 +1,5 @@
 import React from 'react';
 
-import type TitleComponentProps from '@/interfaces/TitleComponentProps.ts';
+import type { TitleProps } from '@/interfaces/TitleProps.ts';
 
-export const TitleComponent: React.FC<TitleComponentProps> = ({ children, titleClasses }) => <h2 className={titleClasses}>{children}</h2>;
+export const TitleComponent: React.FC<TitleProps> = ({ children, titleClasses }) => <h2 className={titleClasses}>{children}</h2>;
