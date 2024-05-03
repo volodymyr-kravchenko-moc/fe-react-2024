@@ -1,6 +1,6 @@
 import aboutImg from '@/assets/about/about-photo.png';
-import { ImageComponent } from '@/components/common/image/Image.component.tsx';
-import { TitleComponent } from '@/components/common/title/Title.component.tsx';
+import { ImageComponent } from '@/components/common/Image.component.tsx';
+import { TitleComponent } from '@/components/common/Title.component.tsx';
 
 import styles from './About.module.css';
 
