@@ -27,6 +27,10 @@
 
 @media screen and (max-width: 736px) {
 
+  .wrapper {
+    padding-bottom: 0;
+  }
+
   .aboutDescription {
     order: 2;
   }
