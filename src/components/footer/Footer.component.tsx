@@ -1,5 +1,5 @@
 import facebookImg from '@/assets/footer/facebook.svg';
-import InstagramImg from '@/assets/footer/instagram.svg';
+import instagramImg from '@/assets/footer/instagram.svg';
 import linkedinImg from '@/assets/footer/linkedin.svg';
 
 import { FooterIconComponent } from './FooterIcon.component.tsx';
@@ -12,7 +12,7 @@ export const FooterComponent = () => (
         <div className={styles.footerIcons}>
             <FooterIconComponent icon={String(facebookImg)} url="https://www.facebook.com/volodymyr.kravchenko.9" />
             <FooterIconComponent icon={String(linkedinImg)} url="https://www.linkedin.com/in/volodymyr-kravchenko-561516120/" />
-            <FooterIconComponent icon={String(InstagramImg)} url="https://www.instagram.com/kvs_ua/" />
+            <FooterIconComponent icon={String(instagramImg)} url="https://www.instagram.com/kvs_ua/" />
         </div>
         <div className={styles.footerSign}>
             Made with 💗 on course{' '}
