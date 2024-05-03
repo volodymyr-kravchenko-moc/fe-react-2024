@@ -13,6 +13,10 @@
   padding-top: 20px;
 }
 
+.footerIconLink {
+  margin: 20px;
+}
+
 .reactIntro {
   color: #EF4934;
   font-weight: 400;

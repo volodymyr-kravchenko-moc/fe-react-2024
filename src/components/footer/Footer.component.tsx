@@ -2,7 +2,7 @@ import facebookImg from '@/assets/footer/facebook.svg';
 import instagramImg from '@/assets/footer/instagram.svg';
 import linkedinImg from '@/assets/footer/linkedin.svg';
 
-import { FooterIconComponent } from './FooterIcon.component.tsx';
+import { SocialIconComponent } from '../common/SocialIcon.component.tsx';
 
 import styles from './footer.module.css';
 
@@ -10,9 +10,17 @@ export const FooterComponent = () => (
     <footer className={styles.footer}>
         <div className={styles.divider}></div>
         <div className={styles.footerIcons}>
-            <FooterIconComponent icon={String(facebookImg)} url="https://www.facebook.com/volodymyr.kravchenko.9" />
-            <FooterIconComponent icon={String(linkedinImg)} url="https://www.linkedin.com/in/volodymyr-kravchenko-561516120/" />
-            <FooterIconComponent icon={String(instagramImg)} url="https://www.instagram.com/kvs_ua/" />
+            <SocialIconComponent
+                icon={facebookImg}
+                url="https://www.facebook.com/volodymyr.kravchenko.9"
+                customClass={styles.footerIconLink}
+            />
+            <SocialIconComponent
+                icon={linkedinImg}
+                url="https://www.linkedin.com/in/volodymyr-kravchenko-561516120/"
+                customClass={styles.footerIconLink}
+            />
+            <SocialIconComponent icon={instagramImg} url="https://www.instagram.com/kvs_ua/" customClass={styles.footerIconLink} />
         </div>
         <div className={styles.footerSign}>
             Made with 💗 on course{' '}
