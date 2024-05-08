@@ -2,12 +2,11 @@
   display: flex;
   flex-wrap: wrap;
   column-gap: 100px;
-  padding: 50px;
 }
 
 .aboutTitle {
-  margin-top: 50px;
-  margin-bottom: 60px;
+  margin: 0;
+  padding: 60px 0;
   width: 100%;
 }
 
@@ -28,7 +27,7 @@
 @media screen and (max-width: 736px) {
 
   .wrapper {
-    padding-bottom: 0;
+    padding-bottom: 40px;
   }
 
   .aboutDescription {
@@ -41,8 +40,7 @@
   }
 
   .aboutTitle {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    padding: 30px 0;
     font-size: 27px;
     order: 1;
   }

@@ -1,6 +1,5 @@
 .footer {
   text-align: center;
-  padding: 50px;
 }
 
 .divider {
@@ -10,11 +9,11 @@
 
 .footerIcons {
   height: 35px;
-  padding-top: 20px;
+  padding: 20px 0;
 }
 
 .footerIconLink {
-  margin: 20px;
+  padding: 20px;
 }
 
 .reactIntro {
@@ -28,7 +27,6 @@
   font-size: 22px;
   font-weight: 400;
   line-height: 32px;
-  padding-top: 20px;
 }
 
 @media screen and (max-width: 736px) {
