@@ -1,4 +1,103 @@
-.header {
-  font-size: 34px;
-  text-align: center;
+.headerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.firstMainWrapper {
+  display: flex;
+  align-items: center;
+  width: 50%
+}
+
+.layout {
+  margin: 50px;
+}
+
+.secondMainWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%
+}
+
+.navBarWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.actionItemsWrapper {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.sun {
+  background: transparent;
+  padding: 0 0 0 10px;
+}
+
+.moon {
+  background: transparent;
+  padding: 0 10px;
+}
+
+button.sun::after {
+  border-right: 1px solid #656565;
+  width: 10px;
+  height: 30px;
+  content: "";
+  display: inline-block;
+}
+
+.navBarItem {
+  border: none;
+  background: transparent;
+  color: #FFF;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.cart {
+  margin: 0 20px;
+  background: transparent;
+  padding: 10px;
+}
+
+.login, .signUp {
+  margin-left: 10px;
+  background: transparent;
+  padding: 0;
+}
+
+.menu {
+  display: none;
+}
+
+@media screen and (max-width: 736px) {
+
+  .headerContainer {
+    padding: 15px 0;
+  }
+
+  .layout, .navBarWrapper, .login, .signUp {
+    display: none;
+  }
+
+  .actionItemsWrapper {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .cart {
+    display: flex;
+    margin: 0;
+  }
+
+  .menu {
+    display: flex;
+    background: transparent;
+    padding: 10px;
+  }
 }
