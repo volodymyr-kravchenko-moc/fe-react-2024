@@ -1,19 +1,22 @@
 .footer {
   text-align: center;
+  min-height: 160px;
 }
 
 .divider {
   border-top: 1px solid #333;
-  margin: 20px;
+  margin: 39px 13px;
 }
 
 .footerIcons {
-  height: 35px;
-  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 29px;
 }
 
 .footerIconLink {
-  padding: 20px;
+  display: flex;
 }
 
 .reactIntro {
@@ -27,12 +30,14 @@
   font-size: 22px;
   font-weight: 400;
   line-height: 32px;
+  margin-bottom: 41px;
 }
 
 @media screen and (max-width: 736px) {
 
   .footer {
     padding-top: 0;
+    min-height: 166px;
   }
 
   .footerSign {
