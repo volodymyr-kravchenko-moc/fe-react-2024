@@ -17,11 +17,9 @@ export const AboutComponent = () => {
                 </p>
                 <p className={styles.aboutText}>
                     This page was developed during the course &apos;
-                    <span className={styles.aboutText}>
-                        <a href="https://www.mastersacademy.education/frontend-for-beginners-it" target="_blank" rel="noreferrer">
-                            Intro to React
-                        </a>
-                    </span>
+                    <a href="https://www.mastersacademy.education/frontend-for-beginners-it" target="_blank" rel="noreferrer">
+                        Intro to React
+                    </a>
                     &apos; from Masters Academy in 2024.
                 </p>
                 <p className={styles.aboutText}>
@@ -30,11 +28,9 @@ export const AboutComponent = () => {
                 </p>
                 <p className={styles.aboutText}>
                     You can contact me via{' '}
-                    <span className={styles.aboutText}>
-                        <a href="https://t.me/kvs2204" target="_blank" rel="noreferrer">
-                            Telegram
-                        </a>{' '}
-                    </span>
+                    <a href="https://t.me/kvs2204" target="_blank" rel="noreferrer">
+                        Telegram
+                    </a>{' '}
                     and check out my{' '}
                     <a href="https://github.com/volodymyr-kravchenko-moc" target="_blank" rel="noreferrer">
                         GitHub
