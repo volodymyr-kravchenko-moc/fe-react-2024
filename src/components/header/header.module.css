@@ -1,56 +1,29 @@
 .headerContainer {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  min-height: 80px;
 }
 
-.firstMainWrapper {
+.logo {
+  flex-grow: 2;
+  max-height: 46px;
+}
+
+.appLayout {
+  flex-grow: 20;
+}
+
+.navBar {
+  flex-grow: 2;
   display: flex;
-  align-items: center;
-  width: 50%
-}
-
-.layout {
-  margin: 50px;
-}
-
-.secondMainWrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 50%
-}
-
-.navBarWrapper {
-  display: flex;
+  justify-content: flex-start;
   align-items: center;
 }
 
-.actionItemsWrapper {
+.activeNavBarItem {
+  margin-right: 40px;
   display: flex;
-  align-items: center;
-  margin-left: auto;
-}
-
-.sun {
-  background: transparent;
-  padding: 0 0 0 10px;
-}
-
-.moon {
-  background: transparent;
-  padding: 0 10px;
-}
-
-button.sun::after {
-  border-right: 1px solid #656565;
-  width: 10px;
-  height: 30px;
-  content: "";
-  display: inline-block;
-}
-
-.navBarItem {
+  padding: 0;
   border: none;
   background: transparent;
   color: #FFF;
@@ -59,16 +32,66 @@ button.sun::after {
   line-height: 20px;
 }
 
-.cart {
-  margin: 0 20px;
+.navBarItem {
+  margin-right: 30px;
+  display: flex;
+  padding: 0;
+  border: none;
   background: transparent;
-  padding: 10px;
+  color: #FFF;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
 }
 
-.login, .signUp {
+.actionItems {
+  flex-grow: 4;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.sun {
+  background: transparent;
+  padding: 10px 0 10px 5px;
+}
+
+.moon {
+  background: transparent;
+  padding: 10px 5px;
+}
+
+button.sun::after {
+  border-right: 1px solid #656565;
+  width: 5px;
+  height: 30px;
+  content: "";
+  display: inline-block;
+}
+
+.cart {
+  background: transparent;
+  padding: 2px;
+}
+
+.loginWrapper {
+  display: flex;
+  width: 236px;
+  justify-content: space-between;
+}
+
+.logout {
+  margin-left: 32px;
+  background: transparent;
+  padding: 0;
+  border-radius: 40px;
+}
+
+.signUp {
   margin-left: 10px;
   background: transparent;
   padding: 0;
+  border-radius: 40px;
 }
 
 .menu {
@@ -79,15 +102,17 @@ button.sun::after {
 
   .headerContainer {
     padding: 15px 0;
+    min-height: 70px;
   }
 
-  .layout, .navBarWrapper, .login, .signUp {
+  .appLayout, .navBar, .loginWrapper {
     display: none;
   }
 
-  .actionItemsWrapper {
+  .actionItems {
     display: flex;
     justify-content: flex-end;
+    margin-left: auto;
   }
 
   .cart {
