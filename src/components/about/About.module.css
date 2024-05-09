@@ -24,11 +24,14 @@
   border-radius: 40px;
 }
 
-@media screen and (max-width: 736px) {
+.aboutText {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 32px;
+  margin-bottom: 30px;
+}
 
-  .wrapper {
-    padding-bottom: 40px;
-  }
+@media screen and (max-width: 736px) {
 
   .aboutDescription {
     order: 2;
