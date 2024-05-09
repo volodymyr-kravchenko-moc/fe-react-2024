@@ -1,6 +1,6 @@
 import type React from 'react';
 
 export interface SocialIconButtonProps {
-    children: React.Component;
+    children: React.ReactElement;
     customClass?: string;
 }
