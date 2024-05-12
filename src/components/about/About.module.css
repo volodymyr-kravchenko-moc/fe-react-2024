@@ -2,12 +2,13 @@
   display: flex;
   flex-wrap: wrap;
   column-gap: 100px;
-  padding: 50px;
 }
 
 .aboutTitle {
-  margin-top: 50px;
-  margin-bottom: 60px;
+  line-height: 44px;
+  font-size: 36px;
+  font-weight: 700;
+  margin: 60px 0;
   width: 100%;
 }
 
@@ -25,6 +26,13 @@
   border-radius: 40px;
 }
 
+.aboutText {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 32px;
+  margin-bottom: 30px;
+}
+
 @media screen and (max-width: 736px) {
 
   .aboutDescription {
@@ -37,9 +45,10 @@
   }
 
   .aboutTitle {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin: 30px 0;
     font-size: 27px;
+    font-weight: 600;
+    line-height: 33px;
     order: 1;
   }
 

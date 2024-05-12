@@ -1,4 +1,124 @@
-.header {
-  font-size: 34px;
-  text-align: center;
+.headerContainer {
+  display: flex;
+  align-items: center;
+  min-height: 80px;
+}
+
+.logo {
+  max-height: 46px;
+}
+
+.appLayout {
+  margin-left: 49px;
+}
+
+.navBar {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.activeNavBarItem {
+  display: flex;
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: #FFF;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.navBarItem {
+  margin-left: 49px;
+  display: flex;
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: #FFF;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.actionItems {
+  display: flex;
+  align-items: center;
+  margin-left: 107px;
+}
+
+.sun {
+  background: transparent;
+  padding: 10px 5px;
+}
+
+.moon {
+  background: transparent;
+  padding: 10px 5px;
+}
+
+.sun::after {
+  border-right: 1px solid #656565;
+  width: 10px;
+  height: 30px;
+  content: "";
+  display: inline-block;
+}
+
+.cart {
+  background: transparent;
+  padding: 2px;
+}
+
+.loginWrapper {
+  display: flex;
+  margin-left: 32px;
+}
+
+.login {
+  background: transparent;
+  padding: 5px 0;
+  border-radius: 40px;
+}
+
+.signUp {
+  margin-left: 6px;
+  background: transparent;
+  padding: 5px 0;
+  border-radius: 40px;
+}
+
+.menu {
+  display: none;
+}
+
+@media screen and (max-width: 736px) {
+
+  .headerContainer {
+    padding: 15px 0;
+    min-height: 70px;
+  }
+
+  .appLayout,
+  .navBar,
+  .loginWrapper {
+    display: none;
+  }
+
+  .actionItems {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+  }
+
+  .cart {
+    display: flex;
+    margin: 0;
+  }
+
+  .menu {
+    display: flex;
+    background: transparent;
+    padding: 10px;
+  }
 }
