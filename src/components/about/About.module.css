@@ -5,8 +5,7 @@
 }
 
 .aboutTitle {
-  margin: 0;
-  padding: 60px 0;
+  margin: 60px 0;
   width: 100%;
 }
 
@@ -43,7 +42,7 @@
   }
 
   .aboutTitle {
-    padding: 30px 0;
+    margin: 30px 0;
     font-size: 27px;
     order: 1;
   }
