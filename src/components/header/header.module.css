@@ -75,16 +75,16 @@
   margin-left: 32px;
 }
 
-.logout {
+.login {
   background: transparent;
-  padding: 5px 10px;
+  padding: 5px 0;
   border-radius: 40px;
 }
 
 .signUp {
   margin-left: 6px;
   background: transparent;
-  padding: 5px 10px;
+  padding: 5px 0;
   border-radius: 40px;
 }
 

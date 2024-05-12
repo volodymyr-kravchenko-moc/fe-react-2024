@@ -38,7 +38,7 @@ export const HeaderComponent = () => (
                 <CartIcon />
             </SocialIconButtonComponent>
             <div className={styles.loginWrapper}>
-                <SocialIconButtonComponent customClass={styles.logout}>
+                <SocialIconButtonComponent customClass={styles.login}>
                     <LoginIcon />
                 </SocialIconButtonComponent>
                 <SocialIconButtonComponent customClass={styles.signUp}>
