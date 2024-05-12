@@ -1,6 +1,6 @@
 import CartIcon from '@/assets/header/cart.svg?react';
+import LoginIcon from '@/assets/header/desktop/login.svg?react';
 import LogoIcon from '@/assets/header/desktop/logo.svg?react';
-import LogoutIcon from '@/assets/header/desktop/logout.svg?react';
 import MoonIcon from '@/assets/header/desktop/moon.svg?react';
 import SignUpIcon from '@/assets/header/desktop/sign-up.svg?react';
 import SunIcon from '@/assets/header/desktop/sun.svg?react';
@@ -13,7 +13,7 @@ import styles from './header.module.css';
 export const HeaderComponent = () => (
     <header className={styles.headerContainer}>
         <div className={styles.logo}>
-            <SocialIconLinkComponent url="/" target="_self">
+            <SocialIconLinkComponent url="/fe-react-2024/" target="_self">
                 <LogoIcon />
             </SocialIconLinkComponent>
         </div>
@@ -39,7 +39,7 @@ export const HeaderComponent = () => (
             </SocialIconButtonComponent>
             <div className={styles.loginWrapper}>
                 <SocialIconButtonComponent customClass={styles.logout}>
-                    <LogoutIcon />
+                    <LoginIcon />
                 </SocialIconButtonComponent>
                 <SocialIconButtonComponent customClass={styles.signUp}>
                     <SignUpIcon />
