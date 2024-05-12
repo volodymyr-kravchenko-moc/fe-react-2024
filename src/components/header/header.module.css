@@ -5,23 +5,20 @@
 }
 
 .logo {
-  flex-grow: 2;
   max-height: 46px;
 }
 
 .appLayout {
-  flex-grow: 20;
+  margin-left: 49px;
 }
 
 .navBar {
-  flex-grow: 2;
+  margin-left: auto;
   display: flex;
-  justify-content: flex-start;
   align-items: center;
 }
 
 .activeNavBarItem {
-  margin-right: 40px;
   display: flex;
   padding: 0;
   border: none;
@@ -33,7 +30,7 @@
 }
 
 .navBarItem {
-  margin-right: 30px;
+  margin-left: 49px;
   display: flex;
   padding: 0;
   border: none;
@@ -45,15 +42,14 @@
 }
 
 .actionItems {
-  flex-grow: 4;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  margin-left: 107px;
 }
 
 .sun {
   background: transparent;
-  padding: 10px 0 10px 5px;
+  padding: 10px 5px;
 }
 
 .moon {
@@ -63,7 +59,7 @@
 
 .sun::after {
   border-right: 1px solid #656565;
-  width: 5px;
+  width: 10px;
   height: 30px;
   content: "";
   display: inline-block;
@@ -76,21 +72,19 @@
 
 .loginWrapper {
   display: flex;
-  width: 236px;
-  justify-content: space-between;
+  margin-left: 32px;
 }
 
 .logout {
-  margin-left: 32px;
   background: transparent;
-  padding: 0;
+  padding: 5px 10px;
   border-radius: 40px;
 }
 
 .signUp {
-  margin-left: 10px;
+  margin-left: 6px;
   background: transparent;
-  padding: 0;
+  padding: 5px 10px;
   border-radius: 40px;
 }
 
