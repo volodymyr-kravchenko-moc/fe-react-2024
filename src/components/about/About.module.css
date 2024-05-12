@@ -5,6 +5,9 @@
 }
 
 .aboutTitle {
+  line-height: 44px;
+  font-size: 36px;
+  font-weight: 700;
   margin: 60px 0;
   width: 100%;
 }
@@ -44,6 +47,8 @@
   .aboutTitle {
     margin: 30px 0;
     font-size: 27px;
+    font-weight: 600;
+    line-height: 33px;
     order: 1;
   }
 
