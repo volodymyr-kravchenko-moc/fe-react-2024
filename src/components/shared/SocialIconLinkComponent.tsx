@@ -1,11 +1,13 @@
 import React from 'react';
 
+import type { LinkProps } from '@/interfaces/LinkProps.ts';
 import type { SocialIconLinkProps } from '@/interfaces/SocialIconLinkProps.ts';
 
 export const SocialIconLinkComponent: React.FC<SocialIconLinkProps> = ({ children, url, customClass, target }) => {
-    const linkProps: any = { rel: 'noreferrer' };
-
-    linkProps.target = target || '_blank';
+    const linkProps: LinkProps = {
+        rel: 'noreferrer',
+        target: target || '_blank',
+    };
 
     if (url) {
         linkProps.href = url;
