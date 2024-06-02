@@ -12,14 +12,14 @@ export const AppContext = createContext<AppContextProps>({
 
 export const AppContextProvider: React.FC<AppContextProviderProps> = ({ children }) => {
     const [cartItems, setCartItems] = React.useState<CartItemProps[]>([]);
-    const [isInitialCartLoading, setInitialCartLoading] = React.useState<boolean>(true);
+    const [isInitialCartLoading, setIsInitialCartLoading] = React.useState<boolean>(true);
 
     useEffect(() => {
         const storedCartItems = localStorage.getItem('storedCartItems');
         const extractedCartItems = storedCartItems ? JSON.parse(storedCartItems) : null;
 
         extractedCartItems && setCartItems(extractedCartItems);
-        setInitialCartLoading(false);
+        setIsInitialCartLoading(false);
     }, []);
 
     useEffect(() => {
