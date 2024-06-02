@@ -2,6 +2,7 @@ import React from 'react';
 import { createContext, useEffect } from 'react';
 
 import type { AppContextProps } from '@/interfaces/AppContextProps.ts';
+import type { AppContextProviderProps } from '@/interfaces/AppContextProviderProps.ts';
 import type { CartItemProps } from '@/interfaces/CartItemProps.ts';
 
 export const AppContext = createContext<AppContextProps>({
@@ -9,7 +10,7 @@ export const AppContext = createContext<AppContextProps>({
     setCartItems: () => {},
 });
 
-export const AppContextProvider = ({ children }) => {
+export const AppContextProvider: React.FC<AppContextProviderProps> = ({ children }) => {
     const [cartItems, setCartItems] = React.useState<CartItemProps[]>([]);
     const [isInitialCartLoading, setInitialCartLoading] = React.useState<boolean>(true);
 
