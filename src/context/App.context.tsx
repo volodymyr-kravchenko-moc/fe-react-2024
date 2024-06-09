@@ -1,4 +1,4 @@
-import { createContext, useEffect, useState } from 'react';
+import React, { createContext, useEffect, useState } from 'react';
 
 import type { AppContextProps } from '@/interfaces/AppContextProps.ts';
 import type { AppContextProviderProps } from '@/interfaces/AppContextProviderProps.ts';

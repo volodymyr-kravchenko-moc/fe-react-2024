@@ -1,3 +1,5 @@
+import React from 'react';
+
 import type { LinkProps } from '@/interfaces/LinkProps.ts';
 import type { SocialIconLinkProps } from '@/interfaces/SocialIconLinkProps.ts';
 

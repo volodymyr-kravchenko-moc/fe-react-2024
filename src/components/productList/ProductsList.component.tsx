@@ -1,3 +1,5 @@
+import React from 'react';
+
 import { ProductCardComponent } from '@/components/productCard/ProductCard.component.tsx';
 import type { ProductsListProps } from '@/interfaces/ProductsListProps.ts';
 
