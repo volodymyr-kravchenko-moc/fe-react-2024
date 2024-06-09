@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import { useContext } from 'react';
 
 import CartIcon from '@/assets/header/cart.svg?react';
 import LoginIcon from '@/assets/header/desktop/login.svg?react';

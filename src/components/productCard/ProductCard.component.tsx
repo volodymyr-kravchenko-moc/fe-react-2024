@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import { useContext } from 'react';
 
 import BuyNowIcon from '@/assets/products/buy-now.svg?react';
 import { AppContext } from '@/context/App.context.tsx';
