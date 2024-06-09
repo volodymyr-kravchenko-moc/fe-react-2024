@@ -2,6 +2,6 @@ export interface CategoryProps {
     id: number;
     name: string;
     image: string;
-    creationAt: Date;
-    updatedAt: Date;
+    creationAt: string;
+    updatedAt: string;
 }

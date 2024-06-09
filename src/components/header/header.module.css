@@ -19,6 +19,7 @@
 }
 
 .activeNavBarItem {
+  margin-left: 49px;
   display: flex;
   padding: 0;
   border: none;
@@ -68,6 +69,25 @@
 .cart {
   background: transparent;
   padding: 2px;
+  position: relative;
+}
+
+.cartIconCounter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  background: #EF4934;
+  color: #111;
+  border-radius: 36px;
+  padding: 0;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 12px;
+  min-width: 17px;
+  min-height: 17px;
+  top: -5px;
+  right: -8px;
 }
 
 .loginWrapper {

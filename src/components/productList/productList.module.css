@@ -1,0 +1,19 @@
+.productList {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px
+}
+
+.productListItem {
+  display: flex;
+}
+
+@media screen and (max-width: 736px) {
+
+  .productList {
+    padding: 0 25px;
+    gap: 20px
+  }
+}

@@ -6,7 +6,7 @@ export interface ProductProps {
     price: number;
     description: string;
     images: string[];
-    creationAt: Date;
-    updatedAt: Date;
+    creationAt: string;
+    updatedAt: string;
     category: CategoryProps;
 }
