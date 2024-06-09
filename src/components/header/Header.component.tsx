@@ -10,6 +10,7 @@ import MenuIcon from '@/assets/header/mobile/menu.svg?react';
 import { SocialIconButtonComponent } from '@/components/shared/SocialIconButtonComponent.tsx';
 import { SocialIconLinkComponent } from '@/components/shared/SocialIconLinkComponent.tsx';
 import { AppContext } from '@/context/App.context.tsx';
+import { MenuItem } from '@/enum/MenuItem.ts';
 import type { HeaderComponentProps } from '@/interfaces/HeaderComponentProps.ts';
 
 import styles from './header.module.css';
@@ -19,11 +20,11 @@ export const HeaderComponent: React.FC<HeaderComponentProps> = ({ activeMenuItem
     const cartItemsCount = cartItems.reduce((total, item) => total + item.quantity, 0);
 
     const setAboutPageActive = () => {
-        setActiveMenuItem('about');
+        setActiveMenuItem(MenuItem.ABOUT);
     };
 
     const setProductsPageActive = () => {
-        setActiveMenuItem('products');
+        setActiveMenuItem(MenuItem.PRODUCTS);
     };
 
     return (
@@ -44,14 +45,14 @@ export const HeaderComponent: React.FC<HeaderComponentProps> = ({ activeMenuItem
             <div className={styles.navBar}>
                 <button
                     type="button"
-                    className={activeMenuItem === 'about' ? styles.activeNavBarItem : styles.navBarItem}
+                    className={activeMenuItem === MenuItem.ABOUT ? styles.activeNavBarItem : styles.navBarItem}
                     onClick={setAboutPageActive}
                 >
                     About
                 </button>
                 <button
                     type="button"
-                    className={activeMenuItem === 'products' ? styles.activeNavBarItem : styles.navBarItem}
+                    className={activeMenuItem === MenuItem.PRODUCTS ? styles.activeNavBarItem : styles.navBarItem}
                     onClick={setProductsPageActive}
                 >
                     Products
