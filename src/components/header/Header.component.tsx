@@ -19,14 +19,6 @@ export const HeaderComponent: React.FC<HeaderComponentProps> = ({ activeMenuItem
     const { cartItems } = useContext(AppContext);
     const cartItemsCount = cartItems.reduce((total, item) => total + item.quantity, 0);
 
-    const setAboutPageActive = () => {
-        setActiveMenuItem(MenuItem.ABOUT);
-    };
-
-    const setProductsPageActive = () => {
-        setActiveMenuItem(MenuItem.PRODUCTS);
-    };
-
     return (
         <header className={styles.headerContainer}>
             <div className={styles.logo}>
@@ -46,14 +38,14 @@ export const HeaderComponent: React.FC<HeaderComponentProps> = ({ activeMenuItem
                 <button
                     type="button"
                     className={activeMenuItem === MenuItem.ABOUT ? styles.activeNavBarItem : styles.navBarItem}
-                    onClick={setAboutPageActive}
+                    onClick={() => setActiveMenuItem(MenuItem.ABOUT)}
                 >
                     About
                 </button>
                 <button
                     type="button"
                     className={activeMenuItem === MenuItem.PRODUCTS ? styles.activeNavBarItem : styles.navBarItem}
-                    onClick={setProductsPageActive}
+                    onClick={() => setActiveMenuItem(MenuItem.PRODUCTS)}
                 >
                     Products
                 </button>
