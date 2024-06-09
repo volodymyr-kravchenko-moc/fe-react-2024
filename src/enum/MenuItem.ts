@@ -1,4 +1,4 @@
-export const MenuItem = {
-    PRODUCTS: 'products',
-    ABOUT: 'about',
-};
+export enum MenuItem {
+    PRODUCTS = 'products',
+    ABOUT = 'about',
+}
