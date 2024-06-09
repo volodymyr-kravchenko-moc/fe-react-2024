@@ -1,5 +1,3 @@
-import React from 'react';
-
 import type { ButtonProps } from '@/interfaces/ButtonProps.ts';
 import type { SocialIconButtonProps } from '@/interfaces/SocialIconButtonProps.ts';
 

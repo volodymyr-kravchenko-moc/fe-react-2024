@@ -1,5 +1,4 @@
-import React from 'react';
-import { createContext, useEffect } from 'react';
+import { createContext, useEffect, useState } from 'react';
 
 import type { AppContextProps } from '@/interfaces/AppContextProps.ts';
 import type { AppContextProviderProps } from '@/interfaces/AppContextProviderProps.ts';
@@ -11,8 +10,8 @@ export const AppContext = createContext<AppContextProps>({
 });
 
 export const AppContextProvider: React.FC<AppContextProviderProps> = ({ children }) => {
-    const [cartItems, setCartItems] = React.useState<CartItemProps[]>([]);
-    const [isInitialCartLoading, setIsInitialCartLoading] = React.useState<boolean>(true);
+    const [cartItems, setCartItems] = useState<CartItemProps[]>([]);
+    const [isInitialCartLoading, setIsInitialCartLoading] = useState<boolean>(true);
 
     useEffect(() => {
         const storedCartItems = localStorage.getItem('storedCartItems');

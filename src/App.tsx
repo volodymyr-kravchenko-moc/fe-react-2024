@@ -1,4 +1,4 @@
-import React from 'react';
+import { useState } from 'react';
 
 import { ProductsComponent } from '@/components/products/Products.component.tsx';
 import { AppContextProvider } from '@/context/App.context.tsx';
@@ -8,7 +8,7 @@ import { FooterComponent } from './components/footer/Footer.component.tsx';
 import { HeaderComponent } from './components/header/Header.component.tsx';
 
 function App() {
-    const [activeMenuItem, setActiveMenuItem] = React.useState<string>('products');
+    const [activeMenuItem, setActiveMenuItem] = useState<string>('products');
 
     return (
         <AppContextProvider>
