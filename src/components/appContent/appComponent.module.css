@@ -1,0 +1,11 @@
+.mainContentWrapper {
+  padding: 0 53px;
+  background: var(--bg-color);
+}
+
+@media screen and (max-width: 736px) {
+
+  .mainContentWrapper {
+    padding: 0;
+  }
+}
