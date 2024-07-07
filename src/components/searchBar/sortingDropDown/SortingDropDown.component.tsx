@@ -9,7 +9,7 @@ export const SortingDropDownComponent = () => {
     const [sortBy, setSortBy] = useState('Price (High - Low)');
     const [isOpen, setIsOpen] = useState(false);
 
-    const handleSortChange = (value) => {
+    const handleSortChange = (value: string) => {
         setSortBy(value);
         setIsOpen(false);
     };
