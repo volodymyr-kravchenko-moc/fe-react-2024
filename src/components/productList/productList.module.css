@@ -3,7 +3,9 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 25px
+  gap: 25px;
+  margin: 0;
+  padding: 52px 0;
 }
 
 .productListItem {

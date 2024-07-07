@@ -11,12 +11,13 @@ import { SocialIconButtonComponent } from '@/components/shared/SocialIconButtonC
 import { SocialIconLinkComponent } from '@/components/shared/SocialIconLinkComponent.tsx';
 import { AppContext } from '@/context/App.context.tsx';
 import { MenuItem } from '@/enum/MenuItem.ts';
+import { Theme } from '@/enum/Theme.ts';
 import type { HeaderComponentProps } from '@/interfaces/HeaderComponentProps.ts';
 
 import styles from './header.module.css';
 
 export const HeaderComponent: React.FC<HeaderComponentProps> = ({ activeMenuItem, setActiveMenuItem }) => {
-    const { cartItems } = useContext(AppContext);
+    const { cartItems, setTheme } = useContext(AppContext);
     const cartItemsCount = cartItems.reduce((total, item) => total + item.quantity, 0);
 
     return (
@@ -27,10 +28,10 @@ export const HeaderComponent: React.FC<HeaderComponentProps> = ({ activeMenuItem
                 </SocialIconLinkComponent>
             </div>
             <div className={styles.appLayout}>
-                <SocialIconButtonComponent customClass={styles.sun}>
+                <SocialIconButtonComponent customClass={styles.sun} onClickAction={() => setTheme(Theme.LIGHT)}>
                     <SunIcon />
                 </SocialIconButtonComponent>
-                <SocialIconButtonComponent customClass={styles.moon}>
+                <SocialIconButtonComponent customClass={styles.moon} onClickAction={() => setTheme(Theme.DARK)}>
                     <MoonIcon />
                 </SocialIconButtonComponent>
             </div>

@@ -2,6 +2,8 @@
   display: flex;
   align-items: center;
   min-height: 80px;
+  background: var(--bg-color-dark);
+  padding: 0 53px;
 }
 
 .logo {
@@ -115,7 +117,8 @@
 @media screen and (max-width: 736px) {
 
   .headerContainer {
-    padding: 15px 0;
+    /*padding: 15px 0;*/
+
     min-height: 70px;
   }
 
