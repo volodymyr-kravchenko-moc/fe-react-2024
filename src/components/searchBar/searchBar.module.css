@@ -49,6 +49,9 @@
   color: var(--text-color);
   border-radius: 50px;
   cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 17px;
 }
 
 .activeCategoryButton {
@@ -63,7 +66,7 @@
   }
 
   .searchInput {
-    width: 330px;
+    max-width: 330px;
     height: 40px;
   }
 
