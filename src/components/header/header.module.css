@@ -114,7 +114,7 @@
   display: none;
 }
 
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 768px) {
 
   .headerContainer {
     /*padding: 15px 0;*/

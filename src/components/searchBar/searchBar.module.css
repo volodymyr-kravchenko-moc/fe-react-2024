@@ -55,7 +55,7 @@
   background-color: #EF4934;
 }
 
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 768px) {
 
   .searchBar {
     flex-direction: column;
