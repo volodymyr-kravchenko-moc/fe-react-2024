@@ -56,6 +56,7 @@
 
 .activeCategoryButton {
   background-color: #EF4934;
+  border-color: #EF4934;
 }
 
 @media screen and (max-width: 768px) {
