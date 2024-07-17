@@ -17,6 +17,8 @@
   --input-text-color-dark: #FFF;
   --border-color-light: #E1E1E1;
   --border-color-dark: #656565;
+  --product-border-color-light: #CCC;
+  --product-border-color-dark: #333;
   --dropdown-color-light: #FFF;
   --dropdown-color-dark: #333;
 }
@@ -26,6 +28,7 @@
   --bg-color: var(--bg-color-light);
   --input-text-color: var(--input-text-color-light);
   --border-color: var(--border-color-light);
+  --product-border-color: var(--product-border-color-light);
   --dropdown-color: var(--dropdown-color-light);
 }
 
@@ -34,6 +37,7 @@
   --bg-color: var(--bg-color-dark);
   --input-text-color: var(--input-text-color-dark);
   --border-color: var(--border-color-dark);
+  --product-border-color: var(--product-border-color-dark);
   --dropdown-color: var(--dropdown-color-dark);
 }
 

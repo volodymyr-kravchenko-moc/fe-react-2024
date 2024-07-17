@@ -1,7 +1,7 @@
 .productCard {
   display: flex;
   flex-direction: column;
-  border: solid 1px #333;
+  border: solid 1px var(--product-border-color);
   border-radius: 20px;
   padding: 18px 15px;
   width: 275px;
