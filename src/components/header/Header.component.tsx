@@ -3,12 +3,12 @@ import React, { useContext } from 'react';
 import CartIcon from '@/assets/header/cart.svg?react';
 import LoginIcon from '@/assets/header/desktop/login.svg?react';
 import LogoIcon from '@/assets/header/desktop/logo.svg?react';
-import MoonIcon from '@/assets/header/desktop/moon.svg?react';
 import SignUpIcon from '@/assets/header/desktop/sign-up.svg?react';
-import SunIcon from '@/assets/header/desktop/sun.svg?react';
 import MenuIcon from '@/assets/header/mobile/menu.svg?react';
 import { SocialIconButtonComponent } from '@/components/shared/SocialIconButtonComponent.tsx';
 import { SocialIconLinkComponent } from '@/components/shared/SocialIconLinkComponent.tsx';
+import { DarkThemeSvgComponent } from '@/components/svg/DarkThemeSvg.component.tsx';
+import { LightThemeSvgComponent } from '@/components/svg/LightThemeSvg.component.tsx';
 import { AppContext } from '@/context/App.context.tsx';
 import { MenuItem } from '@/enum/MenuItem.ts';
 import { Theme } from '@/enum/Theme.ts';
@@ -29,10 +29,10 @@ export const HeaderComponent: React.FC<HeaderComponentProps> = ({ activeMenuItem
             </div>
             <div className={styles.appLayout}>
                 <SocialIconButtonComponent customClass={styles.sun} onClickAction={() => setTheme(Theme.LIGHT)}>
-                    <SunIcon />
+                    <LightThemeSvgComponent />
                 </SocialIconButtonComponent>
                 <SocialIconButtonComponent customClass={styles.moon} onClickAction={() => setTheme(Theme.DARK)}>
-                    <MoonIcon />
+                    <DarkThemeSvgComponent />
                 </SocialIconButtonComponent>
             </div>
             <div className={styles.navBar}>
