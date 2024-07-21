@@ -1,0 +1,17 @@
+.categoryButton {
+  padding: 10px 20px;
+  border: 1px solid var(--border-color);
+  background: var(--bg-color);
+  color: var(--text-color);
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 17px;
+}
+
+.activeCategoryButton {
+  background-color: #EF4934;
+  border-color: #EF4934;
+}
+
