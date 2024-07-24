@@ -1,0 +1,15 @@
+.dropdownItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: left;
+}
+
+.dropdownItem:hover {
+  background-color: #EF4934;
+  border-radius: 50px;
+}
