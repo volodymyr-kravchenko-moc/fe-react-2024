@@ -12,7 +12,7 @@ export const SortingDropDownComponent = () => {
     const [isOpen, setIsOpen] = useState(false);
     const dropDownItems = Object.values(SortingItem);
 
-    const handleSortChange = (value: string) => {
+    const handleSortChange = (value: SortingItem) => {
         setSortBy(value);
         setIsOpen(false);
     };
