@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 import SearchIcon from '@/assets/searchBar/search-icon.svg?react';
-import { CategoryButton } from '@/components/searchBar/categoryButton/CategoryButton.component.tsx';
+import { CategoryButtonComponent } from '@/components/searchBar/categoryButton/CategoryButton.component.tsx';
 import { SortingDropDownComponent } from '@/components/searchBar/sortingDropDown/SortingDropDown.component.tsx';
 
 import styles from './searchBar.module.css';
@@ -31,7 +31,7 @@ export const SearchBar = () => {
             <div className={styles.selectionWrapper}>
                 <div className={styles.categorySelectionWrapper}>
                     {categories.map((category) => (
-                        <CategoryButton
+                        <CategoryButtonComponent
                             key={category}
                             category={category}
                             selectedCategory={selectedCategory}
