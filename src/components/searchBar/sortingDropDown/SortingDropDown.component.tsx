@@ -1,13 +1,16 @@
 import { useState } from 'react';
 
+import { DropDownItemComponent } from '@/components/searchBar/DropDownItem/DropDownItem.component.tsx';
 import { SortingArrowClosedComponent } from '@/components/svg/SortingArrowClosed.component.tsx';
 import { SortingArrowOpenedComponent } from '@/components/svg/SortingArrowOpened.component.tsx';
+import { SortingItem } from '@/enum/SortingItem.ts';
 
 import styles from './sortingDropDown.module.css';
 
 export const SortingDropDownComponent = () => {
-    const [sortBy, setSortBy] = useState('Price (High - Low)');
+    const [sortBy, setSortBy] = useState(SortingItem.PRICE_HIGH_LOW);
     const [isOpen, setIsOpen] = useState(false);
+    const dropDownItems = Object.values(SortingItem);
 
     const handleSortChange = (value: string) => {
         setSortBy(value);
@@ -24,19 +27,11 @@ export const SortingDropDownComponent = () => {
             {isOpen ? (
                 <div className={styles.dropdownMenuWrapper}>
                     <div className={styles.dropdownMenu}>
-                        <div onClick={() => handleSortChange('Price (High - Low)')} className={styles.dropdownItem}>
-                            Price (High - Low)
-                            <SortingArrowOpenedComponent />
-                        </div>
-                        <div onClick={() => handleSortChange('Price (Low - High)')} className={styles.dropdownItem}>
-                            Price (Low - High)
-                        </div>
-                        <div onClick={() => handleSortChange('Newest')} className={styles.dropdownItem}>
-                            Newest
-                        </div>
-                        <div onClick={() => handleSortChange('Oldest')} className={styles.dropdownItem}>
-                            Oldest
-                        </div>
+                        {dropDownItems.map((item, index) => (
+                            <DropDownItemComponent key={index} item={item} handleSortChange={handleSortChange}>
+                                {index === 0 ? <SortingArrowOpenedComponent /> : null}
+                            </DropDownItemComponent>
+                        ))}
                     </div>
                 </div>
             ) : (
