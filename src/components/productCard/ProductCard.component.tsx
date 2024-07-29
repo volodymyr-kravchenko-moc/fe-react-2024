@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 
-import BuyNowIcon from '@/assets/products/buy-now.svg?react';
+import { AddToCartComponent } from '@/components/svg/AddToCart.component.tsx';
 import { AppContext } from '@/context/App.context.tsx';
 import type { ProductCardProps } from '@/interfaces/ProductCardProps.ts';
 
@@ -48,7 +48,7 @@ export const ProductCardComponent: React.FC<ProductCardProps> = ({ product }) =>
                     <span className={styles.productCurrency}>&#8372;</span>
                 </div>
                 <button className={styles.productBuyNow} type="button" onClick={addProductToCart}>
-                    <BuyNowIcon />
+                    <AddToCartComponent />
                     {currentProductCountInCart && <span className={styles.cartIconCounter}>{currentProductCountInCart}</span>}
                 </button>
             </div>

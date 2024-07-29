@@ -4,16 +4,46 @@
   font-weight: 400;
   color-scheme: light dark;
   color: rgba(255, 255, 255, .87);
-  background-color: #242424;
+  background-color: var(--bg-color-light);
   font-synthesis: none;
   text-rendering: optimizelegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  --text-color-light: #111;
+  --text-color-dark: #FFF;
+  --bg-color-light: #FFF;
+  --bg-color-dark: #111;
+  --input-text-color-light: #656565;
+  --input-text-color-dark: #FFF;
+  --border-color-light: #E1E1E1;
+  --border-color-dark: #656565;
+  --product-border-color-light: #CCC;
+  --product-border-color-dark: #333;
+  --dropdown-color-light: #FFF;
+  --dropdown-color-dark: #333;
+}
+
+.light-theme {
+  --text-color: var(--text-color-light);
+  --bg-color: var(--bg-color-light);
+  --input-text-color: var(--input-text-color-light);
+  --border-color: var(--border-color-light);
+  --product-border-color: var(--product-border-color-light);
+  --dropdown-color: var(--dropdown-color-light);
+}
+
+.dark-theme {
+  --text-color: var(--text-color-dark);
+  --bg-color: var(--bg-color-dark);
+  --input-text-color: var(--input-text-color-dark);
+  --border-color: var(--border-color-dark);
+  --product-border-color: var(--product-border-color-dark);
+  --dropdown-color: var(--dropdown-color-dark);
 }
 
 a {
   font-weight: 500;
-  color: #FFF;
+  color: var(--text-color);
   text-decoration: underline;
 }
 
@@ -26,11 +56,10 @@ body {
   align-items: center;
   min-width: 320px;
   min-height: 100vh;
-  background: #000;
+  background: var(--bg-color-dark);
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  padding: 0 53px;
 }
 
 h1 {
@@ -41,12 +70,12 @@ h1 {
 h2 {
   font-size: 36px;
   font-weight: 700;
-  color: #FFF;
+  color: var(--text-color);
 }
 
 p {
   font-size: 22px;
-  color: #FFF;
+  color: var(--text-color);
   margin-top: 0;
 }
 
@@ -68,7 +97,7 @@ button:focus-visible {
 }
 
 
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 768px) {
 
   body {
     padding: 0 30px;
@@ -79,7 +108,7 @@ button:focus-visible {
 
   :root {
     color: #213547;
-    background-color: #FFF;
+    background-color: var(--bg-color-light);
   }
 
   a:hover {
